@@ -1,0 +1,253 @@
+html {
+    font-size: 62.5%;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+body {
+    background: rgb(34,34,34);
+    font-family: -apple-system, BlinkMacSystemFont, Segoe\ UI, Roboto, Helvetica\ Neue, Arial, Noto\ Sans, sans-serif, Gilroy-Medium, Gilroy-Bold;
+    color: white;
+    font-size: 1.4rem;
+    overflow-y: hidden;
+}
+
+.calculaite-block {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30rem;
+    height: 850px;
+}
+
+.grey-text {
+    font-size: 1.8rem;
+    color: rgb(158, 158, 158);
+}
+
+.info-web {
+    font-size: 1.8rem;
+    color: rgb(158, 158, 158);
+}
+
+.info {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 2rem;
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.info h1 {
+    margin-bottom: 5px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+.item {
+    border-right: 2px solid white;
+    text-align: center;
+    width: 250px;
+}
+
+.content :last-child {
+    border-right: none;
+}
+
+.nav-header {
+    font-size: 2rem;
+    background-color: #000;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    transition: .2s all linear;
+}
+
+.nav-header:hover {
+    background-color: rgb(44, 44, 44);
+}
+
+.location {
+    background-color: rgb(44, 44, 44);
+}
+
+
+.location li {
+    text-align: left;
+    padding: 15px 1rem;
+}
+
+.location li:hover {
+    background-color: rgb(0, 0, 0);
+}
+
+.check {
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+
+#br:hover #fo-br {
+    display: block;
+}
+
+#gr:hover #fo-gr {
+    display: block;
+}
+
+#pr:hover #fo-pr {
+    display: block;
+}
+
+#fo-br, #fo-gr, #fo-pr {
+    display: none;
+    overflow-y: scroll;
+    height: 715px;
+}
+
+.button-block {
+    text-align: center;
+    width: 100%;
+}
+
+#button {
+    width: 754px;
+    border: none;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    padding: 1rem;
+    transition: .2s all linear;
+}
+
+#button:hover {
+    background-color: rgb(121, 121, 121);
+}
+
+.alert {
+    display: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    cursor: pointer;
+    background-color: rgb(92, 92, 92, .5);
+}
+
+.alert.active {
+    display: block;
+}
+
+.alert_block {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%);
+    width: 300px;
+    margin: 0 auto;
+    font-size: 1.8rem;
+    background-color: #fff;
+    color: black;
+    padding: 2rem;
+    border-radius: 5px;
+    cursor: default;
+}
+
+.alert_block :first-child {
+    margin-top: 0rem;
+}   
+
+.alert-item {
+    display: flex;
+    margin-top: 2rem;
+}
+
+.alert_info {
+    margin-left: 1rem;
+}
+
+#close {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    z-index: 1001;
+    color: red;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+/* Section */
+
+.strit {
+    width: 250px;
+    margin-top: 4rem;
+    text-align: center;
+}
+.strit .nav-header {
+    margin-top: 1rem;
+    border: 1px solid #fff;
+}
+
+.section {
+    position: relative;
+    height: 2000px;
+}
+
+.section a {
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+}
+
+.btn-none {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+#prev {
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    width: 40px;
+    height: 40px;
+    z-index: 3;
+
+    color: #fff;
+    border: 1px solid rgb(88, 88, 88);
+    padding: 2rem;
+    border-radius: 50%;
+    text-align: center;
+}
+
+#prev:after {
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    z-index: 3;
+    content: '';
+    width: 3rem;
+    height: 3rem;
+    border-bottom: 2px solid rgb(107, 107, 107);
+    border-right: 2px solid rgb(107, 107, 107);
+    transform: translateY(35%) translateX(50%) rotate(45deg);
+}
+
+#prev.active:after {
+    transform: translateY(70%) translateX(50%) rotate(-135deg);
+}
+
+#prev:active{
+    border:0;
+    outline: none;
+}
+
+.scroll-to {
+    color: #fff;
+}
